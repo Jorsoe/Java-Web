@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Now!</title>
+    <style type="text/css">
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="RegServlet" method="post">
+        <h1>New Member</h1>
+        <span style="display:inline-block;width:200px;text-align:right;">ID</span><input type="text" name="id"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Password</span><input type="password" name="password"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Re-Password</span><input type="password" name="repPssword"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">First Name</span><input type="text" name="firstName"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Last Name</span><input type="text" name="lastName"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Address</span><input type="text" name="address"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">City</span><input type="text" name="city"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">State</span>
+        <select name="state">
+            <option>Xi'An</option>
+            <option>GuangZhou</option>
+        </select><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Country</span><input type="text" name="country"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Email Address</span><input type="email" name="email"/><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Select Interest</span>
+
+        <label><input name="interest" type="checkbox" value="Technology" />Technology</label>
+        <label><input name="interest" type="checkbox" value="Enterprise" />Enterprise</label>
+        <label><input name="interest" type="checkbox" value="Research" />Research</label>
+        <label><input name="interest" type="checkbox" value="Govenment" />Government</label>
+        <label><input name="interest" type="checkbox" value="People" />People</label>
+        <label><input name="interest" type="checkbox" value="Life style" />Life Style</label><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Question</span>
+        <select name="question">
+            <option>What do you like?</option>
+            <option>What do you need?</option>
+        </select><br>
+        <span style="display:inline-block;width:200px;text-align:right;">Answer</span>
+        <textarea name="content" id="content" rows="5" cols="20"></textarea><br>
+        <span style="display:inline-block;width:200px;text-align:right;"></span><input type="submit" name="submit" value="Submit Information" >
+        <input type="submit" name="submit" value="Reset Form" >
+    </form>
+</body>
+</html>
